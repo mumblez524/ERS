@@ -1,0 +1,109 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.servlets.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HomepageController</servlet-name>
+    <servlet-class>com.servlets.HomepageController</servlet-class>
+  </servlet>
+<!-- Employee Servlets -->
+  <servlet>
+    <servlet-name>EmployeeController</servlet-name>
+    <servlet-class>com.servlets.employee.EmployeeController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateInfoController</servlet-name>
+    <servlet-class>com.servlets.employee.UpdateInfoController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReimbursementController</servlet-name>
+    <servlet-class>com.servlets.employee.ReimbursementController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SubmitReimbursementController</servlet-name>
+    <servlet-class>com.servlets.employee.SubmitReimbursementController</servlet-class>
+  </servlet>
+<!-- Manager Servlets -->
+  <servlet>
+    <servlet-name>AllRequestsController</servlet-name>
+    <servlet-class>com.servlets.manager.AllRequestsController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PendingRequestsController</servlet-name>
+    <servlet-class>com.servlets.manager.PendingRequestsController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResolvePendingController</servlet-name>
+    <servlet-class>com.servlets.manager.ResolvePendingController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResolvedRequestsController</servlet-name>
+    <servlet-class>com.servlets.manager.ResolvedRequestsController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AllEmployeesController</servlet-name>
+    <servlet-class>com.servlets.manager.AllEmployeesController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChooseEmployeeController</servlet-name>
+    <servlet-class>com.servlets.manager.ChooseEmployeeController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HomepageController</servlet-name>
+    <url-pattern>/HomepageController</url-pattern>
+  </servlet-mapping>
+<!-- Employee Servlets -->
+  <servlet-mapping>
+    <servlet-name>EmployeeController</servlet-name>
+    <url-pattern>/api/employees/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateInfoController</servlet-name>
+    <url-pattern>/UpdateInfoController</url-pattern> 
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReimbursementController</servlet-name>
+    <url-pattern>/api/reimbursements/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitReimbursementController</servlet-name>
+    <url-pattern>/SubmitReimbursementController</url-pattern>
+  </servlet-mapping>
+<!-- Manager Servlets -->
+  <servlet-mapping>
+    <servlet-name>AllRequestsController</servlet-name>
+    <url-pattern>/api/allRequests/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PendingRequestsController</servlet-name>
+    <url-pattern>/api/pendingRequests/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResolvePendingController</servlet-name>
+    <url-pattern>/ResolvePendingController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResolvedRequestsController</servlet-name>
+    <url-pattern>/api/resolvedRequests/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllEmployeesController</servlet-name>
+    <url-pattern>/api/allEmployees/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChooseEmployeeController</servlet-name>
+    <url-pattern>/api/chooseEmployee/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>

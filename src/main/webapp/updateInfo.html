@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Info</title>
+</head>
+<body>
+<h3>Enter new information below.</h3>
+<form action="UpdateInfoController" method="post">
+    <table>
+        <tr>
+            <td>Name: </td>
+            <td><input type="text" name="newName"></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td><input type="password" name="newPassword"></td>
+        </tr>
+        <tr>
+            <td>City: </td>
+            <td><input type="text" name="newCity"></td>
+        </tr>
+        <tr>
+            <td>State: </td>
+            <td><input type="text" name="newState"></td>
+        </tr>
+    </table><br>
+    <input type="submit" value="Submit">
+</form>
+<form action="HomepageController" method="post"><br>
+    <input type="submit" value="Homepage">
+</form>
+</body>
+</html>
